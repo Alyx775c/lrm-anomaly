@@ -4,4 +4,4 @@ type voidPlayerCall = (plr: Player) => void;
 
 const adminCommands: CmdRecord = {};
 
-export { adminCommands };
+export = adminCommands;

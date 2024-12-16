@@ -1,4 +1,4 @@
-import AccessLevels from "ReplicatedStorage/AccessLevels";
+import AccessLevels from "shared/AccessLevels";
 
 interface DoorType {
 	AccessLevel: keyof typeof AccessLevels;

@@ -1,6 +1,6 @@
 import { Players, ServerScriptService } from "@rbxts/services";
 import { CmdRecord, commands } from "./CmdList";
-import { adminCommands } from "./AdminCmds";
+import adminCommands from "./AdminCmds";
 
 let lList = require(ServerScriptService.AlyxLuaImpl["CmdList.lua"]) as CmdRecord;
 let lAdminList = require(ServerScriptService.AlyxLuaImpl["AdminCmds.lua"]) as CmdRecord;
@@ -25,6 +25,7 @@ Players.PlayerAdded.Connect((plr: Player) => {
 			}
 		}
 	}
+	
 	plr.Chatted.Connect((msg: string) => {
 		let lwr = msg.lower();
 		let args = lwr.split(" ");
