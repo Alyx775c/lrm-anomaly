@@ -1,5 +1,6 @@
-import { voidPlayerCall } from './CmdList.d';
-import { CSAnimationHelper } from "shared/Services";
+
+import { AnimationService } from "shared/Services";
+import { voidPlayerCall } from "./CmdList.d";
 
 export type CmdRecord = Record<string, voidPlayerCall | { [key: string]: voidPlayerCall }>;
 
@@ -9,7 +10,7 @@ const commands: CmdRecord = {
 			let char = plr.Character;
 			let animator = char?.FindFirstChild("Humanoid")?.FindFirstChild("Animator") as Animator;
 
-			CSAnimationHelper.pWipePlay(animator, 83566894055814, true);
+			AnimationService.pWipePlay(animator, 83566894055814, true);
 		},
 	},
 };
