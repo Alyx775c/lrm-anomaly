@@ -1,6 +1,6 @@
 import AccessLevels from "shared/AccessLevels";
 
-class I_CSKeycardService {
+class CSKeycardService {
 	/**
 	 * hasPerms
 	 * @param plr Player to check clearance on
@@ -15,6 +15,5 @@ class I_CSKeycardService {
 	}
 }
 
-const CSKeycardService = new I_CSKeycardService();
 
 export { CSKeycardService };

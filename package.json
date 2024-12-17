@@ -6,7 +6,7 @@
   "scripts": {
     "build": "rbxtsc",
     "watch": "rbxtsc -w",
-    "typedoc": "typedoc --skipErrorChecking src/**/*.ts"
+    "typedoc": "typedoc --skipErrorChecking src/shared/**/*.ts"
   },
   "files": [
     "out",

@@ -16,16 +16,6 @@ const PlayerVariable = (plr: Player, name: string) => {
 	return { read, write };
 };
 
-type Variables = {
-	["PlayersFrozen"]: Record<string, boolean>;
-	["DoorDebounce"]: SetRead<number>;
-};
-
-type SetRead<ValueType> = (plr: Player) => {
-	read: () => ValueType;
-	write: (value: ValueType) => void;
-};
-
 const C_Variables: Variables = {
 	PlayersFrozen: {},
 	DoorDebounce: (plr: Player) => ({
@@ -38,4 +28,4 @@ const C_Variables: Variables = {
 	}),
 } as Variables;
 
-export { PlayerVariable, C_Variables as Variables};
+export { PlayerVariable, C_Variables as Variables };

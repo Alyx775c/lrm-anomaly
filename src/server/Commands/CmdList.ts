@@ -1,5 +1,5 @@
 import { voidPlayerCall } from './CmdList.d';
-import { CSAnimationHelper } from "shared/Services/AnimationHelper";
+import { CSAnimationHelper } from "shared/Services";
 
 export type CmdRecord = Record<string, voidPlayerCall | { [key: string]: voidPlayerCall }>;
 

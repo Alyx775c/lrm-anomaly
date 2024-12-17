@@ -1,6 +1,6 @@
 import { Variables } from "shared/Variables";
 
-class I_CSAnimationHelper {
+class CSAnimationHelper {
 	/**
 	 * pWipePlay
 	 * stands for player wiping play
@@ -40,7 +40,5 @@ class I_CSAnimationHelper {
 	 */
 	public pRestore(plr: Player): void {}
 }
-
-const CSAnimationHelper = new I_CSAnimationHelper();
 
 export { CSAnimationHelper };
