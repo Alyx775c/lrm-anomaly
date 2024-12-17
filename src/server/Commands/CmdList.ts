@@ -1,6 +1,6 @@
+import { voidPlayerCall } from './CmdList.d';
 import { CSAnimationHelper } from "shared/Services/AnimationHelper";
 
-type voidPlayerCall = (plr: Player) => void;
 export type CmdRecord = Record<string, voidPlayerCall | { [key: string]: voidPlayerCall }>;
 
 const commands: CmdRecord = {

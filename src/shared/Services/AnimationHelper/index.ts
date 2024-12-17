@@ -38,7 +38,7 @@ class I_CSAnimationHelper {
 	 * restores a player's animation script
 	 * @deprecated it doesnt do anything
 	 */
-	public pRestore(plr: Player) {}
+	public pRestore(plr: Player): void {}
 }
 
 const CSAnimationHelper = new I_CSAnimationHelper();
