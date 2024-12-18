@@ -24,11 +24,11 @@ class CSAnimationHelper {
 
 		let track = animator.LoadAnimation(animation);
 		track.Looped = looping;
-		track.Play();
 		track.Stopped.Connect(() => {
 			Variables.PlayersFrozen[character.Name] = false;
 			if (character.PrimaryPart) character.PrimaryPart.Anchored = false;
 		});
+		track.Play();
 
 		return track;
 	}
